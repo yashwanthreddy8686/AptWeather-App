@@ -1,0 +1,20 @@
+@use '../abstracts/' as abs;
+.offscreen{
+    position: absolute;
+    left: -100000px;
+}
+.skip-link{
+    position: absolute;
+    top: -999px;
+    left: 0;
+    background: abs.$text-shadow-color;
+    padding: 14px;
+    z-index: 1;
+    color: abs.$font-color;   
+}
+
+.skip-link:focus,
+.skip-link:active{
+    top: auto;
+    left: auto;
+}

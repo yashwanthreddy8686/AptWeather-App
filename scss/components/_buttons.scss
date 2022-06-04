@@ -1,0 +1,21 @@
+@use '../abstracts' as abs;
+.button{
+    min-width: 48px;
+    min-height: 48px;
+    color: abs.$button-textcolor;
+    border: 1px solid abs.$bordercolor;
+    border-radius: 80px;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 900;
+    background-color: abs.$button-color;
+    @include abs.mq(768px){
+        font-size: 1.5rem;
+        min-width: 64px;
+        min-height: 64px;
+    }   
+}
+
+.button:hover{
+    
+}
