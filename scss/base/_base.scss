@@ -8,6 +8,9 @@
 
 html{
     background-color: ab.$background-color;
+    background-image: url("../img/clouds.jpeg");
+    background-size: cover;
+    background-blend-mode: overlay;
     font-size: 16px;
     font-family: "Montserrat" , sans-serif;
     font-weight: bold;
