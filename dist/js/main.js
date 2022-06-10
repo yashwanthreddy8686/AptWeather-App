@@ -38,6 +38,7 @@ const geoSuccess = (position) => {
         lon: position.coords.longitude,
         name: `Lat:${position.coords.latitude} Long:${position.coords.longitude}`
     };
+    currentLoc = myCoordsObj;
     // set location object
     // update data and display 
 }
