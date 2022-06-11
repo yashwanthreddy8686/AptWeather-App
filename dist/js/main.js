@@ -41,4 +41,9 @@ const geoSuccess = (position) => {
     currentLoc = myCoordsObj;
     // set location object
     // update data and display 
+    displayData();
+}
+
+const displayData = (data) => {
+    return data;
 }
