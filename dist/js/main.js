@@ -45,5 +45,6 @@ const geoSuccess = (position) => {
 }
 
 const displayData = (data) => {
-    return data;
+    const cards = data;
+    return cards;
 }
