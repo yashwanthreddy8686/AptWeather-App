@@ -3,6 +3,7 @@ import {
     displayError
 } from './domFunctions.js'
 import CurrentLocation from "./CurrentLocation.js"
+import { setLocationObject } from './dataFunctions.js';
 const currentLoc = new CurrentLocation();
 
 const initApp = () => {
@@ -38,8 +39,9 @@ const geoSuccess = (position) => {
         lon: position.coords.longitude,
         name: `Lat:${position.coords.latitude} Long:${position.coords.longitude}`
     };
-    setLocationObject(currentLoc, myCoordsObj);
     // set location object
+    setLocationObject(currentLoc, myCoordsObj);
+    console.log(currentLoc);
     // update data and display 
     displayData();
 }
