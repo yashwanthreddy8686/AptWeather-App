@@ -67,7 +67,15 @@ const loadWeather = (e) => {
 
 const displayHomeLocationWeather = (home) => {
     if (typeof home === 'string') {
-        //const locationJson = 
+        const locationJson = JSON.parse(home);
+        const myCoordsObj = {
+            lat: locationJson.lat,
+            lon: locationJson.lon,
+            name: locationJson.name,
+            unit: locationJson.unit
+        }
+        setLocationObject(currentLoc, myCoordsObj);
+        updateDataAndDisplay(currentLoc);
     }
 }
 
